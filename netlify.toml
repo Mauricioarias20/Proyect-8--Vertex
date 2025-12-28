@@ -8,7 +8,7 @@
   # Railway public URL (e.g. https://your-app.up.railway.app)
 [[redirects]]
   from = "/api/*"
-  to = "https://<RAILWAY_URL>/:splat"
+  to = "https://proyect-8-vertex-production.up.railway.app/:splat"
   status = 200
   force = false
 
