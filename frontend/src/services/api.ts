@@ -6,10 +6,16 @@ export async function fetchJSON(path: string, options: RequestInit = {}) {
   }
   if (token) headers['Authorization'] = `Bearer ${token}`
 
-  // Use VITE_API_BASE when provided (build-time); otherwise use relative
-  // paths so Netlify can proxy `/api/*` to the backend. During local dev set
-  // VITE_API_BASE to http://localhost:4000 in an `.env` file if needed.
-  const base = import.meta.env.VITE_API_BASE ?? ''
+  // Resolve API base in this order:
+  // 1. `VITE_API_BASE` (set at build time in Vercel or locally)
+  // 2. If running in a browser and not localhost, default to the
+  //    Railway public URL so deployments without env vars still work
+  // 3. Otherwise use relative paths (for local dev with dev server proxy)
+  const buildBase = import.meta.env.VITE_API_BASE
+  const runtimeDefault = (typeof window !== 'undefined' && !/localhost|127\.0\.0\.1/.test(window.location.hostname))
+    ? 'https://proyect-8-vertex-production.up.railway.app'
+    : ''
+  const base = buildBase ?? runtimeDefault ?? ''
   const resp = await fetch(`${base}${path}`, {
     ...options,
     headers
