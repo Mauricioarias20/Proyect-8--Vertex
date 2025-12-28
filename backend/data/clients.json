@@ -1,0 +1,92 @@
+[
+  {
+    "id": "cli-1",
+    "name": "BrightCo",
+    "email": "hello@brightco.com",
+    "clientState": "active",
+    "createdAt": "2024-11-01T09:00:00.000Z",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "demo": true
+  },
+  {
+    "id": "cli-2",
+    "name": "Nova Retail",
+    "email": "contact@novaretail.com",
+    "clientState": "active",
+    "createdAt": "2025-06-01T08:30:00.000Z",
+    "userId": "bob@agency.test",
+    "organizationId": "org-1",
+    "demo": true
+  },
+  {
+    "id": "cli-3",
+    "name": "OldTown LLC",
+    "email": "info@oldtown.com",
+    "clientState": "active",
+    "createdAt": "2023-03-01T10:00:00.000Z",
+    "userId": "dan@agency.test",
+    "organizationId": "org-1",
+    "demo": true
+  },
+  {
+    "id": "cli-4",
+    "name": "Churned Corp",
+    "email": "accounts@churnedcorp.com",
+    "clientState": "churned",
+    "createdAt": "2022-01-10T12:00:00.000Z",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "demo": true
+  },
+  {
+    "id": "cli-5",
+    "name": "QuickStart",
+    "email": "team@quickstart.io",
+    "clientState": "active",
+    "createdAt": "2025-02-14T09:30:00.000Z",
+    "userId": "emma@agency.test",
+    "organizationId": "org-1",
+    "demo": true
+  },
+  {
+    "id": "cli-6",
+    "name": "Holiday Homes",
+    "email": "bookings@holidayhomes.com",
+    "clientState": "active",
+    "createdAt": "2024-09-20T11:00:00.000Z",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "demo": true,
+    "archived": false
+  },
+  {
+    "id": "cli-7",
+    "name": "Solo Venture",
+    "email": "founder@soloventure.com",
+    "clientState": "lead",
+    "createdAt": "2025-07-05T16:00:00.000Z",
+    "userId": "dan@agency.test",
+    "organizationId": "org-1"
+  },
+  {
+    "id": "dd789092-882a-40c3-a57e-96d135a2cd67",
+    "name": "test",
+    "email": "test",
+    "clientState": "lead",
+    "createdAt": "2025-12-28T05:53:57.455Z",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "archived": true
+  },
+  {
+    "id": "729d8d7b-b8f1-4f18-a002-103b27b18f4e",
+    "name": "test1",
+    "email": "test1@mail.com",
+    "clientState": "lead",
+    "createdAt": "2025-12-28T21:14:16.467Z",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "archived": true
+  }
+]

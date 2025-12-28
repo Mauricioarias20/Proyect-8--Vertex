@@ -1,0 +1,37 @@
+[
+  {
+    "username": "Alice Owner",
+    "email": "alice@agency.test",
+    "role": "owner",
+    "organizationId": "org-1",
+    "passwordHash": "$2a$10$tQsBjet8GQqHEDXir2O/fO4Q8feV99INzbbkI0G2oef89goGBVpiS"
+  },
+  {
+    "username": "Bob Manager",
+    "email": "bob@agency.test",
+    "role": "manager",
+    "organizationId": "org-1",
+    "passwordHash": "$2a$10$evTy319FuJAyFmmZPUWBxekb.f2GGhItsquFiWElnOxEdfZbQOLxa"
+  },
+  {
+    "username": "Carla Rep",
+    "email": "carla@agency.test",
+    "role": "staff",
+    "organizationId": "org-1",
+    "passwordHash": "$2a$10$hL7uICe107YwKgMGto189Oj5IG3k1t99zvPrLtBLplvLk4yvpWOSK"
+  },
+  {
+    "username": "Dan Rep",
+    "email": "dan@agency.test",
+    "role": "staff",
+    "organizationId": "org-1",
+    "passwordHash": "$2a$10$HlM5eLRMq7Fwd8Zf0FUO3.2KTEnZrXm/V37S91OkaoVkmpO8VhQDm"
+  },
+  {
+    "username": "Emma Rep",
+    "email": "emma@agency.test",
+    "role": "staff",
+    "organizationId": "org-1",
+    "passwordHash": "$2a$10$b6OFN0JTSwoaREooUPZTVuB4P/HR.657zLlamFtGhc8l/p5F7cW7W"
+  }
+]

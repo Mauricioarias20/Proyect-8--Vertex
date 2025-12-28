@@ -1,0 +1,200 @@
+[
+  {
+    "id": "act-1",
+    "type": "call",
+    "description": "Intro discovery call",
+    "date": "2025-11-15T10:00:00.000Z",
+    "clientId": "cli-1",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-11-15T10:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-2",
+    "type": "meeting",
+    "description": "Project scoping",
+    "date": "2025-11-22T14:00:00.000Z",
+    "clientId": "cli-1",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-11-22T14:10:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-3",
+    "type": "call",
+    "description": "Status check",
+    "date": "2025-12-01T09:30:00.000Z",
+    "clientId": "cli-1",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-12-01T09:35:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-4",
+    "type": "proposal",
+    "description": "Sent proposal and pricing",
+    "date": "2025-12-10T12:00:00.000Z",
+    "clientId": "cli-1",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-12-10T12:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-5",
+    "type": "call",
+    "description": "Follow-up call",
+    "date": "2025-12-20T11:00:00.000Z",
+    "clientId": "cli-1",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-12-20T11:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-6",
+    "type": "meeting",
+    "description": "Wrap-up meeting",
+    "date": "2025-12-26T15:00:00.000Z",
+    "clientId": "cli-1",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-12-26T15:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-7",
+    "type": "call",
+    "description": "Check-in",
+    "date": "2025-11-01T10:00:00.000Z",
+    "clientId": "cli-2",
+    "userId": "bob@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-11-01T10:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-8",
+    "type": "call",
+    "description": "Follow-up",
+    "date": "2025-12-07T09:00:00.000Z",
+    "clientId": "cli-2",
+    "userId": "bob@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-12-07T09:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-9",
+    "type": "call",
+    "description": "Initial discovery",
+    "date": "2025-06-01T10:00:00.000Z",
+    "clientId": "cli-3",
+    "userId": "dan@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-06-01T10:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-10",
+    "type": "meeting",
+    "description": "Re-engagement",
+    "date": "2025-10-15T13:00:00.000Z",
+    "clientId": "cli-3",
+    "userId": "dan@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-10-15T13:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-11",
+    "type": "call",
+    "description": "Ad-hoc support (irregular)",
+    "date": "2025-12-12T11:00:00.000Z",
+    "clientId": "cli-3",
+    "userId": "dan@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-12-12T11:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-12",
+    "type": "call",
+    "description": "Account check",
+    "date": "2025-04-02T09:00:00.000Z",
+    "clientId": "cli-4",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-04-02T09:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-13",
+    "type": "call",
+    "description": "Kickoff",
+    "date": "2025-12-05T10:00:00.000Z",
+    "clientId": "cli-5",
+    "userId": "emma@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-12-05T10:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-14",
+    "type": "meeting",
+    "description": "Product review",
+    "date": "2025-12-15T14:00:00.000Z",
+    "clientId": "cli-5",
+    "userId": "emma@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-12-15T14:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-15",
+    "type": "meeting",
+    "description": "Holiday Homes site visit",
+    "date": "2026-01-03T12:00:00.000Z",
+    "clientId": "cli-6",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-12-01T12:00:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-16",
+    "type": "task",
+    "description": "Prepare onboarding checklist",
+    "date": "2025-11-20T08:00:00.000Z",
+    "clientId": "cli-7",
+    "userId": "dan@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-11-20T08:05:00.000Z",
+    "activityStatus": "completed"
+  },
+  {
+    "id": "act-17",
+    "type": "call",
+    "description": "Missed follow-up",
+    "date": "2025-11-30T10:00:00.000Z",
+    "clientId": "cli-2",
+    "userId": "bob@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-11-30T10:05:00.000Z",
+    "activityStatus": "missed"
+  },
+  {
+    "id": "fb07952c-ff83-40e2-8e4f-7ce9818a7538",
+    "type": "meeting",
+    "description": "Site visit",
+    "date": "2026-01-04T07:53:00.000Z",
+    "clientId": "cli-6",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-12-28T04:53:20.657Z",
+    "activityStatus": "completed"
+  }
+]
