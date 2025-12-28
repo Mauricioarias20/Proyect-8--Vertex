@@ -11,7 +11,11 @@ export async function fetchJSON(path: string, options: RequestInit = {}) {
   // 2. If running in a browser and not localhost, default to the
   //    Railway public URL so deployments without env vars still work
   // 3. Otherwise use relative paths (for local dev with dev server proxy)
-  const buildBase = import.meta.env.VITE_API_BASE
+  let buildBase = import.meta.env.VITE_API_BASE
+  // If the build-time var points to localhost (e.g. from a local .env), ignore
+  // it for deployed sites so the runtime fallback can take effect.
+  if (typeof buildBase === 'string' && /localhost|127\.0\.0\.1/.test(buildBase)) buildBase = undefined
+
   const runtimeDefault = (typeof window !== 'undefined' && !/localhost|127\.0\.0\.1/.test(window.location.hostname))
     ? 'https://proyect-8-vertex-production.up.railway.app'
     : ''
