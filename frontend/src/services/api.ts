@@ -6,7 +6,11 @@ export async function fetchJSON(path: string, options: RequestInit = {}) {
   }
   if (token) headers['Authorization'] = `Bearer ${token}`
 
-  const resp = await fetch(`${import.meta.env.VITE_API_BASE || 'http://localhost:4000'}${path}`, {
+  // Use VITE_API_BASE when provided (build-time); otherwise use relative
+  // paths so Netlify can proxy `/api/*` to the backend. During local dev set
+  // VITE_API_BASE to http://localhost:4000 in an `.env` file if needed.
+  const base = import.meta.env.VITE_API_BASE ?? ''
+  const resp = await fetch(`${base}${path}`, {
     ...options,
     headers
   })
