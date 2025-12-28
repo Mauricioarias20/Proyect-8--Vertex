@@ -1,7 +1,9 @@
 import app from './app'
 import seedAllOrgs from './store/seed'
 
-const PORT = parseInt(process.env.PORT || '4000', 10) || 4000
+// Railway runs apps on port 8080 by default; prefer env PORT but fall back
+// to 8080 to match the platform if PORT is not provided.
+const PORT = parseInt(process.env.PORT || '8080', 10) || 8080
 const HOST = process.env.HOST || '0.0.0.0'
 
 // Ensure demo seeds are applied on startup (guard against errors so the
