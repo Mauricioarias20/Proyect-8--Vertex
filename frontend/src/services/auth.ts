@@ -1,9 +1,16 @@
 type AuthResponse = { token: string; user: { username: string; email: string; role?: 'owner'|'member'; organizationId: string } }
 
-// Default to backend origin when VITE_API_BASE is not set (dev convenience)
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4000'
+function resolveApiBase() {
+  let buildBase = import.meta.env.VITE_API_BASE
+  if (typeof buildBase === 'string' && /localhost|127\.0\.0\.1/.test(buildBase)) buildBase = undefined
+  const runtimeDefault = (typeof window !== 'undefined' && !/localhost|127\.0\.0\.1/.test(window.location.hostname))
+    ? 'https://proyect-8-vertex-production.up.railway.app'
+    : ''
+  return buildBase ?? runtimeDefault ?? ''
+}
 
 export async function register(payload: { username: string; email: string; password: string }) {
+  const API_BASE = resolveApiBase()
   const res = await fetch(`${API_BASE}/api/auth/register`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -14,6 +21,7 @@ export async function register(payload: { username: string; email: string; passw
 }
 
 export async function login(payload: { email: string; password: string }) {
+  const API_BASE = resolveApiBase()
   const res = await fetch(`${API_BASE}/api/auth/login`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
