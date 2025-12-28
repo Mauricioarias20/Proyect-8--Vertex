@@ -2,11 +2,12 @@ import app from './app'
 import seedAllOrgs from './store/seed'
 
 const PORT = process.env.PORT || 4000
+const HOST = process.env.HOST || '0.0.0.0'
 
 // Ensure demo seeds are applied on startup
 const seedRes = seedAllOrgs()
 console.log('Seed summary:', seedRes)
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`)
+app.listen(PORT, HOST, () => {
+  console.log(`Server running on ${HOST}:${PORT}`)
 })
