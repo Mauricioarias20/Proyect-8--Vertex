@@ -33,5 +33,12 @@
     "role": "staff",
     "organizationId": "org-1",
     "passwordHash": "$2a$10$b6OFN0JTSwoaREooUPZTVuB4P/HR.657zLlamFtGhc8l/p5F7cW7W"
+  },
+  {
+    "username": "test1",
+    "email": "test@mail.com",
+    "passwordHash": "$2a$10$kaime3yQ4YjvVdgeoxT8feCS53/LFVtWJfWpgOszcIyP62ZVD9Cpy",
+    "role": "staff",
+    "organizationId": "org-1"
   }
 ]

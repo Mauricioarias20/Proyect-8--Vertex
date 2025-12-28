@@ -196,5 +196,16 @@
     "organizationId": "org-1",
     "createdAt": "2025-12-28T04:53:20.657Z",
     "activityStatus": "completed"
+  },
+  {
+    "id": "2060fa6f-f4a4-4d64-8fdc-bf4ef003d95b",
+    "type": "meeting",
+    "description": "Site visit",
+    "date": "2026-01-04T22:16:27.463Z",
+    "clientId": "cli-6",
+    "userId": "carla@agency.test",
+    "organizationId": "org-1",
+    "createdAt": "2025-12-28T22:16:27.464Z",
+    "activityStatus": "scheduled"
   }
 ]
