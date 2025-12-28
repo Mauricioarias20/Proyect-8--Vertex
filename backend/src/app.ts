@@ -11,30 +11,20 @@ import debugRoutes from './routes/debug'
 
 const app = express()
 
-// Configure CORS to allow requests from deployed frontend domains (and
-// reflect the request origin). This ensures preflight (OPTIONS) requests
-// are handled correctly when the frontend is hosted on Vercel.
-const corsOptions = {
-	origin: (origin: any, callback: any) => {
-		// allow requests with no origin (e.g., curl, server-to-server)
-		if (!origin) return callback(null, true)
-		// allow the production frontend origin and any other you trust
-		const allowed = [
-			'https://proyect-8-vertex.vercel.app',
-			'https://proyect-8-vertex-production.up.railway.app'
-		]
-		if (allowed.includes(origin)) return callback(null, true)
-		// fallback: allow by reflecting origin
-		return callback(null, true)
-	},
-	methods: ['GET','POST','PUT','DELETE','OPTIONS'],
-	allowedHeaders: ['Content-Type','Authorization'],
-	credentials: true,
-	optionsSuccessStatus: 204
-}
+// Force CORS headers for all responses and handle OPTIONS preflight early.
+// This ensures the Access-Control-Allow-* headers are present even if a
+// proxy or other layer interferes.
+app.use((req, res, next) => {
+	const allowedOrigin = 'https://proyect-8-vertex.vercel.app'
+	res.header('Access-Control-Allow-Origin', allowedOrigin)
+	res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS')
+	res.header('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+	res.header('Access-Control-Allow-Credentials', 'true')
+	if (req.method === 'OPTIONS') return res.sendStatus(204)
+	next()
+})
 
-app.use(cors(corsOptions))
-app.options('*', cors(corsOptions))
+// Keep express.json after CORS handling
 app.use(express.json())
 
 app.get('/health', (req, res) => res.json({status: 'ok'}))
