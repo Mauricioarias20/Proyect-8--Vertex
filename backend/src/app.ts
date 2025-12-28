@@ -28,6 +28,8 @@ app.use((req, res, next) => {
 app.use(express.json())
 
 app.get('/health', (req, res) => res.json({status: 'ok'}))
+// Root route to make the deployment URL respond with a friendly message
+app.get('/', (req, res) => res.send('API running — proyect-8-vertex'))
 app.use('/api/auth', authRoutes)
 app.use('/api/clients', clientsRoutes)
 app.use('/api/activities', activitiesRoutes)
