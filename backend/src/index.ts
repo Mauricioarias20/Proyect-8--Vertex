@@ -1,7 +1,7 @@
 import app from './app'
 import seedAllOrgs from './store/seed'
 
-const PORT = process.env.PORT || 4000
+const PORT = parseInt(process.env.PORT || '4000', 10) || 4000
 const HOST = process.env.HOST || '0.0.0.0'
 
 // Ensure demo seeds are applied on startup
